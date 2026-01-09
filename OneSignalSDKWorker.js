@@ -1,1 +1,1 @@
-  <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+importScripts("https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.sw.js");
