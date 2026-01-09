@@ -213,7 +213,12 @@
     OneSignalDeferred.push(async function(OneSignal) {
       await OneSignal.init({
         appId: "cf8e5618-2a58-412d-bc60-5103adae5385",
+        autoPrompt: true,
       });
+      const allowPermission = OneSignal.Notifications.permission
+      if(!allowPermission) {
+        OneSignal.Slidedown.promptPush();
+      }
     });
   </script>
 </head>
