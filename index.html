@@ -214,6 +214,16 @@
       await OneSignal.init({
         appId: "cf8e5618-2a58-412d-bc60-5103adae5385",
         autoPrompt: true,
+        promptOptions: {
+          slidedown: {
+            enabled: true,
+            actionMessage: "Would you like to receive notifications from our game?",
+            acceptButtonText: "Yes",
+            cancelButtonText: "No",
+            timeout: 6000,
+            autoAcceptTitle: "Thanks for accepting!",
+          }
+        },
       });
       // const permissionAllowed = OneSignal.Notifications.permission
       // if(!permissionAllowed) {
