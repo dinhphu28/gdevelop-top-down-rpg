@@ -212,21 +212,20 @@
     window.OneSignalDeferred = window.OneSignalDeferred || [];
     OneSignalDeferred.push(async function(OneSignal) {
       await OneSignal.init({
-        appId: "cf8e5618-2a58-412d-bc60-5103adae5385",
+        appId: "b042473d-b722-4d2e-a10a-670e7215e378",
         autoPrompt: true,
         promptOptions: {
           slidedown: {
             enabled: true,
-            actionMessage: "Would you like to receive notifications from our game?",
-            acceptButtonText: "Yes",
-            cancelButtonText: "No",
-            timeout: 6000,
-            autoAcceptTitle: "Thanks for accepting!",
+            actionMessage: "Bật thông báo để không bỏ lỡ ưu đãi dành riêng cho bạn!",
+            acceptButtonText: "Đồng ý",
+            cancelButtonText: "Để sau",
+            timeout: 6000
           }
         },
       });
     });
-  </script>
+ </script>
 </head>
 <body>
 
